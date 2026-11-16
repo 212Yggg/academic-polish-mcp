@@ -1,0 +1,35 @@
+{
+  "name": "academic-polish-mcp",
+  "version": "1.0.1",
+  "description": "A lightweight MCP server for conservative academic text polishing.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/212Yggg/academic-polish-mcp.git"
+  },
+  "type": "module",
+  "bin": {
+    "academic-polish-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "academic-polish": {
+      "command": "npx",
+      "args": ["-y", "git+https://github.com/212Yggg/academic-polish-mcp.git#v1.0.1"],
+      "env": {
+        "LLM_API_KEY": "REPLACE_IN_PLATFORM_ONLY",
+        "LLM_BASE_URL": "https://api.deepseek.com",
+        "LLM_MODEL": "deepseek-flash",
+        "LLM_TIMEOUT_MS": "90000"
+      }
+    }
+  }
+}
